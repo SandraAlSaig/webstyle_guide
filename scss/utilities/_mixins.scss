@@ -1,0 +1,59 @@
+//Mixins
+
+@mixin btn {
+  border-radius: 5px;
+  padding: .5em;
+  margin-bottom: 1em;
+  color: #fff;
+}
+
+@mixin center {
+  width: 90%;
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+// flex container
+@mixin flex {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@mixin flex-row {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+  // @content ;
+
+
+// // breakpoints
+//
+// @mixin mq($break) {
+//     @if $break == "small" {
+//         @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-med) {
+//             @content
+//         }
+//     }
+//     @else if $break == "medium" {
+//         @media (min-width: $breakpoint-med + 1) {
+//             @content
+//         }
+//     }
+//     @else if $break =="large" {
+//         @media (min-width: $breakpoint-lg) {
+//             @content
+//         }
+//     }
+// }

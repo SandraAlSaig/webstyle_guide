@@ -1,0 +1,57 @@
+//Variables
+
+// colors
+
+$color-primary: #cccfca;
+$color-secondary: #5ae2c4;
+$color-accent: #6ddfff;
+
+// fonts
+
+$font-stack-primary: 'Raleway', sans-serif;
+
+$font-size-p: 1em;
+$font-size-h: 1.3em;
+
+// max-width
+
+$max-width: 1400px;
+
+// spacing
+
+$content-spacing: 4em;
+
+// descriptive color variables
+
+$grey      : #808080;
+$white     : #fff;
+$skyblue   : #40dff7;
+$avocado   : #6f966b;
+$bloodred  : #b55353;
+$sunset    : #f2967c;
+$lilac     : #877196;
+$turquoise : #80f0bf;
+$lilac-light  : #bf9ff7;
+$skyblue-dark : #2b3abf;
+$avocado-light : #51de70;
+$bloodred-light : #ff7e7a;
+$sunset-light : #ff8664;
+
+// button colors
+
+$button-colors: (
+  'login': $skyblue,
+  'default': $skyblue,
+  'success': $avocado,
+  'error': $bloodred,
+  'warning': $sunset,
+  'info': $lilac
+);
+
+
+// breakpoints
+
+$breakpoint-xs: 1px;
+$breakpoint-s: 480px;
+$breakpoint-med: 481px;
+$breakpoint-lg: 1400px;

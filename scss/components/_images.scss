@@ -1,0 +1,31 @@
+//Images
+
+.img--logo {
+  @include flex-col;
+  margin: auto;
+  padding-bottom: 1.5em;
+  @media (min-width: $breakpoint-med){
+    margin-top: 1.5em;
+    margin-left: 1em;
+    width: 150px;
+  }
+}
+
+.img--frame {
+  max-width: 100%;
+  padding: .7em;
+  border: 1px solid lightgrey;
+  margin-bottom: 1em;
+  @media (min-width: $breakpoint-med){
+    width: 400px;
+    margin-left: 3em;
+  }
+}
+
+.img--avatar{
+  max-width: 200px;
+  align-self: center;
+  @media (min-width: $breakpoint-med){
+    max-width: 170px;
+  }
+}

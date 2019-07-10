@@ -1,0 +1,22 @@
+//Forms
+
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      max-width: 90%;
+      margin: auto;
+    }
+
+    .form__label--hidden{
+      display: none;
+      padding: .8em;
+
+    }
+
+    .form__input {
+      padding: .6em;
+      margin-bottom: 1.2em;
+      border-style: hidden;
+      border-bottom: 4px solid $color-secondary;
+    }

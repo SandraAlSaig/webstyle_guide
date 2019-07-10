@@ -1,0 +1,50 @@
+//Typography
+
+
+    //.container
+    .link {
+      color: $skyblue;
+      text-decoration: none;
+    }
+
+
+    .blockquote{
+      padding-left: .8em;
+      margin-bottom: 2em;
+      margin-right: 1em;
+      text-align: justify;
+      border-left: 8px solid $color-secondary;
+      font-size: $font-size-h;
+      font-style: italic;
+      font-weight: 100;
+      @media (min-width: $breakpoint-med){
+        max-width: 80%;
+        padding-left: 2em;
+      }
+    }
+
+
+    h1 {
+      color: $color-secondary;
+    }
+
+    .headline--primary{
+      margin-left: -1.2em;
+      @media (min-width: $breakpoint-med){
+        margin-right: 1em;
+      }
+    }
+
+    .headline--secondary {
+      font-weight: 300;
+      color: lightgrey;
+      text-align: left;
+      margin-bottom: 1em;
+      margin-left: -.2em;
+      width: 100%;
+      margin: auto;
+      @media (min-width: $breakpoint-med){
+        margin-bottom: 1em;
+      }
+
+    }
