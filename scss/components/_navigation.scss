@@ -7,7 +7,8 @@
     padding-top: 1em;
     padding-left: unset;
     @media (min-width: $breakpoint-med){
-      padding-left: 4em;
+      padding-left: 1em;
+      margin-left: -2em;
     }
   }
 
@@ -18,7 +19,7 @@
     @media (min-width: $breakpoint-med){
       display: inline-block;
       margin-right: 2em;
-      font-size: $font-size-h;
+      font-size: $font-size-p;
     }
   }
 
