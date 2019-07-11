@@ -23,7 +23,7 @@
   margin-bottom: 2em;
   @media (min-width: $breakpoint-med){
     width: 400px;
-    margin-left: 3em;
+    margin-left: 6em;
   }
 }
 
@@ -32,6 +32,6 @@
   align-self: center;
   margin-bottom: 1em;
   @media (min-width: $breakpoint-med){
-    max-width: 165px;
+    max-width: 185px;
   }
 }

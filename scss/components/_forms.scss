@@ -2,14 +2,18 @@
 
 
     #forms {
-      margin-left: -1.2em;
+      margin-left: -1em;
     }
 
     .form {
       display: flex;
       flex-direction: column;
-      max-width: 90%;
+      max-width: 80%;
       margin: auto;
+      @media (min-width: $breakpoint-med){
+        margin-left: -.7em;
+        max-width: 70%;
+      }
     }
 
     .form__label--hidden{
@@ -23,4 +27,7 @@
       margin-bottom: 1.2em;
       border-style: hidden;
       border-bottom: 4px solid $color-secondary;
+      @media (min-width: $breakpoint-med){
+        margin-left: .9em;
+      }
     }

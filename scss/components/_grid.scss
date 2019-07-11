@@ -15,6 +15,7 @@
 .grid__col--6 {
   @include flex-col;
   @media (min-width: $breakpoint-med){
+    margin-right: 12em;    
   }
 }
 
@@ -22,6 +23,8 @@
   font-weight: lighter;
   @media (min-width: $breakpoint-med){
     margin-right: $content-spacing;
+    max-width: 650px;
+    margin-right: 3em;
   }
 }
 
@@ -52,6 +55,8 @@
   }
   @media (min-width: $breakpoint-med){
     margin-bottom: 3em;
+    // max-width: 650px;
+    // margin-right: 3em;
   }
 }
 
