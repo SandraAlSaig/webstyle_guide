@@ -2,21 +2,21 @@
 //Mixins
 
 // flex container
-@mixin flex {
-  display: flex;
-  justify-content: center;
+@mixin flex ($disp:flex, $jusco:center){
+  display: $disp;
+  justify-content: $jusco;
 }
 
-@mixin flex-col ($disp:null, $fdir:null, $jusco:null){
+@mixin flex-col ($disp:flex, $fdir:column, $jusco:null){
     display: $disp;
     flex-direction:  $fdir;
     justify-content: $jusco;
 }
-@mixin flex-row {
-    display: flex;
+@mixin flex-row ($disp:flex, $fdir:row, $jusco:start){
+    display: $disp;
     width: 100%;
-    flex-direction: row;
-    justify-content: start;
+    flex-direction: $fdir;
+    justify-content: $jusco;
     align-items: flex-start;
 }
   // @content ;

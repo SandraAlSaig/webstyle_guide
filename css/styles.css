@@ -317,9 +317,10 @@ template {
 * {
   box-sizing: border-box; }
 
-@media (min-width: 768px) {
-  .grid__col--6 {
-    margin-right: 5em; } }
+.grid__col--6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 .grid__col--8 {
   font-weight: lighter; }
@@ -529,7 +530,7 @@ template {
 
 @media (min-width: 768px) {
   button {
-    margin-left: 0.6em; } }
+    margin-left: 1.4em; } }
 
 #buttons {
   padding-bottom: 2em; }
@@ -556,10 +557,12 @@ template {
   margin-bottom: .8em; }
 
 #images {
-  padding-top: 2em;
   padding-bottom: 2em; }
 
 .img--logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: auto;
   padding-bottom: 1.5em; }
   @media (min-width: 768px) {
@@ -575,7 +578,7 @@ template {
   @media (min-width: 768px) {
     .img--frame {
       width: 400px;
-      margin-right: -8em; } }
+      margin-right: 8em; } }
 
 .img--avatar {
   max-width: 145px;
@@ -602,7 +605,6 @@ template {
 
 .blockquote {
   padding-left: .8em;
-  margin-bottom: 2em;
   margin-right: 1em;
   text-align: justify;
   border-left: 8px solid #5ae2c4;
