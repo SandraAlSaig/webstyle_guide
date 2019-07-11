@@ -7,14 +7,11 @@
 // major grid styles have been added here for you
 // but additional styling may be needed
 // **********************************************
-.container {
-  width: 85%;
-  margin: auto;
-}
 
 .grid__col--6 {
   @include flex-col;
   @media (min-width: $breakpoint-med){
+    margin-right: 5em;
   }
 }
 
@@ -28,8 +25,8 @@
 }
 
 .grid__col--9 {
-  @include flex-col;
-  @include center;
+  @include flex-col ($disp:flex, $fdir:column, $jusco: center);
+  @extend %center;
   text-align: center;
 
 }
@@ -40,9 +37,8 @@
   font-weight: lighter;
   @media (min-width: $breakpoint-med){
     flex-direction: row;
-    margin-right: 9em;
-    max-width: 1000px;
-    font-size: 1em;
+    font-size: $font-size-p;
+
   }
 }
 

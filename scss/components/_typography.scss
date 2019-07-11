@@ -1,5 +1,13 @@
 //Typography
 
+    .container {
+      font-family: $font-stack-primary;
+      width: 85%;
+      margin: auto;
+      @media (min-width: $breakpoint-med){
+        font-size: $font-size-h;
+      }
+    }
 
     #type {
       margin-left: -.4em;

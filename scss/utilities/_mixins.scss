@@ -1,20 +1,5 @@
+
 //Mixins
-
-@mixin btn {
-  border-radius: 5px;
-  padding: .5em;
-  margin-bottom: 1em;
-  color: #fff;
-}
-
-@mixin center {
-  width: 90%;
-  max-width: $max-width;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
 
 // flex container
 @mixin flex {
@@ -22,10 +7,10 @@
   justify-content: center;
 }
 
-@mixin flex-col {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+@mixin flex-col ($disp:null, $fdir:null, $jusco:null){
+    display: $disp;
+    flex-direction:  $fdir;
+    justify-content: $jusco;
 }
 @mixin flex-row {
     display: flex;
@@ -34,9 +19,7 @@
     justify-content: start;
     align-items: flex-start;
 }
-
   // @content ;
-
 
 // breakpoints
 

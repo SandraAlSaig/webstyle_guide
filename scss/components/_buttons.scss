@@ -13,43 +13,29 @@
 
 
     [class^="btn--default"] {
-      border-radius: 5px;
-      padding: .5em;
-      margin-bottom: 1em;
+      @extend %btn;
       background-color: $skyblue;
-      color: #fff;
+
     }
 
     [class^="btn--success"] {
-      border-radius: 5px;
-      padding: .5em;
-      margin-bottom: 1em;
+      @extend %btn;
       background-color: $avocado;
-      color: #fff;
     }
 
-    [class^="btn--error"]{
+    [class^="btn--error"] {
+      @extend %btn;
       background-color: $bloodred;
-      color: #fff;
-      border-radius: 5px;
-      padding: .5em;
-      margin-bottom: 1em;
     }
 
     [class^="btn--warning"] {
+      @extend %btn;
       background-color: $sunset;
-      color: #fff;
-      border-radius: 5px;
-      padding: .5em;
-      margin-bottom: 1em;
     }
 
     [class^="btn--info"] {
+      @extend %btn;
       background-color: $lilac;
-      color: #fff;
-      border-radius: 5px;
-      padding: .5em;
-      margin-bottom: 1em;
     }
 
     .theme__colors {
