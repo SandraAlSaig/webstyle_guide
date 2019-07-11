@@ -38,22 +38,22 @@
   // @content ;
 
 
-// // breakpoints
-//
-// @mixin mq($break) {
-//     @if $break == "small" {
-//         @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-med) {
-//             @content
-//         }
-//     }
-//     @else if $break == "medium" {
-//         @media (min-width: $breakpoint-med + 1) {
-//             @content
-//         }
-//     }
-//     @else if $break =="large" {
-//         @media (min-width: $breakpoint-lg) {
-//             @content
-//         }
-//     }
-// }
+// breakpoints
+
+@mixin mq($break) {
+    @if $break == "small" {
+        @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-med) {
+            @content
+        }
+    }
+    @else if $break == "medium" {
+        @media (min-width: $breakpoint-med + 1) {
+            @content
+        }
+    }
+    @else if $break =="large" {
+        @media (min-width: $breakpoint-lg) {
+            @content
+        }
+    }
+}

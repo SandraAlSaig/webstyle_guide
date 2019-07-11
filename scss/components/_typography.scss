@@ -1,6 +1,10 @@
 //Typography
 
 
+    #type {
+      margin-left: -.4em;
+    }
+
     //.container
     .link {
       color: $skyblue;
@@ -29,7 +33,8 @@
     }
 
     .headline--primary{
-      margin-left: -1.2em;
+      margin-left: -.5em;
+      padding-bottom: .6em;
       @media (min-width: $breakpoint-med){
         margin-right: 1em;
       }
@@ -39,8 +44,9 @@
       font-weight: 300;
       color: lightgrey;
       text-align: left;
-      margin-bottom: 1em;
-      margin-left: -.2em;
+      font-style: italic;
+      padding-bottom: 1em;
+      margin-left: -.6em;
       width: 100%;
       margin: auto;
       @media (min-width: $breakpoint-med){

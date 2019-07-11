@@ -8,7 +8,7 @@
 // but additional styling may be needed
 // **********************************************
 .container {
-  width: 75%;
+  width: 85%;
   margin: auto;
 }
 
@@ -84,9 +84,6 @@
   background-color: #c7b89b;
 }
 
-// .grid__col--4.theme__colors {
-//   background-color: lime;
-// }
 //------------------------------
 
 .grid__row {
@@ -108,7 +105,7 @@
     flex-direction: column;
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    @media (min-width: $breakpoint-med) {
       flex-direction: row;
     }
   }
