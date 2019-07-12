@@ -21,6 +21,20 @@
 }
   // @content ;
 
+  // Media Query Mixins
+
+  @mixin for-tablet-only {
+  @media (min-width: $breakpoint-sm) { @content; }
+  }
+
+  @mixin for-tablet {
+  @media (min-width: $breakpoint-med) { @content; }
+  }
+
+  @mixin for-desktop-only {
+  @media (min-width: $breakpoint-lg) { @content; }
+  }
+
 // breakpoints
 
 @mixin mq($break) {

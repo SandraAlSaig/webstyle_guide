@@ -7,16 +7,21 @@
 // major grid styles have been added here for you
 // but additional styling may be needed
 // **********************************************
+.container {
+  width: 85%;
+  max-width: $max-width;
+  margin: auto;
+}
 
 .grid__col--6 {
   @include flex-col($disp:flex, $fdir:column, $jusco: center);
-  @media (min-width: $breakpoint-med){
+  @include for-desktop-only {
   }
 }
 
 .grid__col--8 {
   font-weight: lighter;
-  @media (min-width: $breakpoint-med){
+  @include for-desktop-only {
     margin-right: $content-spacing;
     max-width: 650px;
     margin-right: 3em;
@@ -34,7 +39,7 @@
   @include flex($disp:flex, $jusco:center);
   flex-direction: column;
   font-weight: lighter;
-  @media (min-width: $breakpoint-med){
+  @include for-desktop-only {
     flex-direction: row;
     font-size: $font-size-p;
 
@@ -51,7 +56,7 @@
   & > p {
     text-align: justify;
   }
-  @media (min-width: $breakpoint-med){
+  @include for-desktop-only {
     margin-bottom: 3em;
     // max-width: 650px;
     // margin-right: 3em;
@@ -90,7 +95,7 @@
 //------------------------------
 
 .grid__row {
-  @media (min-width: $breakpoint-med){
+  @include for-desktop-only {
     margin: auto;
     justify-content: center;
 		align-items: center;
@@ -110,7 +115,7 @@
     flex-direction: column;
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: $breakpoint-med) {
+    @include for-desktop-only {
       flex-direction: row;
     }
   }
@@ -133,7 +138,7 @@
         flex-basis: 100%;
 
         // NOTE: replace with media query mixin if aiming for exceeds
-        @media (min-width: $breakpoint-med) {
+        @include for-desktop-only {
 
           // base stlyes applied to all grid columns
           margin-top: 0;
@@ -152,7 +157,7 @@
   & + & {
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: $breakpoint-med) {
+    @include for-desktop-only {
 
       // add grid gutter
       margin-left: 10px;

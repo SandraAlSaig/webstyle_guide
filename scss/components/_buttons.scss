@@ -2,7 +2,7 @@
 
     // Buttons:
     button {
-      @media (min-width: $breakpoint-med){
+      @include for-desktop-only {
         margin-left: 1.4em;
       }
     }

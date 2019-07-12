@@ -10,7 +10,7 @@
       flex-direction: column;
       max-width: 80%;
       margin: auto;
-      @media (min-width: $breakpoint-med){
+      @include for-desktop-only {
         margin-left: -.7em;
         max-width: 70%;
       }
@@ -27,7 +27,7 @@
       margin-bottom: 1.2em;
       border-style: hidden;
       border-bottom: 4px solid $color-secondary;
-      @media (min-width: $breakpoint-med){
-        margin-left: .9em;
+      @include for-desktop-only {
+        margin-left: 2.2em;
       }
     }

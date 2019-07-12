@@ -2,9 +2,7 @@
 
     .container {
       font-family: $font-stack-primary;
-      width: 85%;
-      margin: auto;
-      @media (min-width: $breakpoint-med){
+      @include for-desktop-only {
         font-size: $font-size-h;
       }
     }
@@ -28,7 +26,8 @@
       font-size: $font-size-h;
       font-style: italic;
       font-weight: 100;
-      @media (min-width: $breakpoint-med){
+      @include for-desktop-only {
+        font-size: 1.1em;
         max-width: 80%;
         padding-left: 2em;
       }
@@ -37,12 +36,15 @@
 
     h1 {
       color: $color-secondary;
+      @include for-desktop-only {
+        font-size: 1.5em;
+      }
     }
 
     .headline--primary{
-      margin-left: -.5em;
+      margin-left: -1.4em;
       padding-bottom: .6em;
-      @media (min-width: $breakpoint-med){
+      @include for-desktop-only {
         margin-right: 1em;
       }
     }
@@ -56,7 +58,7 @@
       margin-left: -.6em;
       width: 100%;
       margin: auto;
-      @media (min-width: $breakpoint-med){
+      @include for-desktop-only {
         margin-bottom: 1em;
       }
 

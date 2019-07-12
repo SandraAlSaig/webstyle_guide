@@ -15,7 +15,7 @@ $font-size-h: 1.3em;
 
 // max-width
 
-$max-width: 1400px;
+$max-width: 1200px;
 
 // spacing
 
@@ -52,6 +52,10 @@ $button-colors: (
 // breakpoints
 
 $breakpoint-xs: 1px;
-$breakpoint-s: 480px;
-$breakpoint-med: 768px;
+$breakpoint-sm: 768px;
+$breakpoint-med: 992px;
 $breakpoint-lg: 1400px;
+
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1400px;

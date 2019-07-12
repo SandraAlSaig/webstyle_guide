@@ -6,7 +6,7 @@
     padding-bottom: 2em;
     padding-top: 1em;
     padding-left: unset;
-    @media (min-width: $breakpoint-med){
+    @include for-desktop-only {
       padding-left: 1em;
       margin-left: -2em;
     }
@@ -16,7 +16,7 @@
     margin-bottom: .3em;
     padding-bottom: .5em;
     padding-top: .5em;
-    @media (min-width: $breakpoint-med){
+    @include for-desktop-only {
       display: inline-block;
       margin-right: 2em;
       font-size: $font-size-p;

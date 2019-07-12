@@ -8,20 +8,20 @@
   @include flex-col($disp:flex, $fdir:column, $jusco: space-between);
   margin: auto;
   padding-bottom: 1.5em;
-  @media (min-width: $breakpoint-med){
+  @include for-desktop-only {
     margin-left: 1em;
     width: 150px;
   }
 }
 
 .img--frame {
-  max-width: 100%;
   padding: .7em;
   border: 1px solid lightgrey;
   margin-bottom: 2em;
-  @media (min-width: $breakpoint-med){
+  @include for-desktop-only {
     width: 400px;
-    margin-right: 8em;
+    max-width: 400px;;
+    margin-left: 4em;
   }
 }
 
@@ -29,7 +29,7 @@
   max-width: 145px;
   align-self: center;
   margin-bottom: 1em;
-  @media (min-width: $breakpoint-med){
+  @include for-desktop-only {
     max-width: 185px;
   }
 }
