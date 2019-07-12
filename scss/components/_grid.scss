@@ -13,6 +13,12 @@
   margin: auto;
 }
 
+.grid__col--3 {
+  @include for-tablet-only {
+  margin-left: -1.5em;
+  }
+}
+
 .grid__col--6 {
   @include flex-col($disp:flex, $fdir:column, $jusco: center);
   @include for-desktop-only {
@@ -32,6 +38,9 @@
   @include flex-col ($disp:flex, $fdir:column, $jusco: center);
   @extend %center;
   text-align: center;
+  @include for-tablet-only {
+    margin-right: -3em;
+  }
 
 }
 

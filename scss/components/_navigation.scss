@@ -6,6 +6,11 @@
     padding-bottom: 2em;
     padding-top: 1em;
     padding-left: unset;
+    @include for-tablet-only {
+      padding-left: .5em;
+      margin-top: -6em;
+
+    }
     @include for-desktop-only {
       padding-left: 1em;
       margin-left: -2em;
@@ -16,6 +21,11 @@
     margin-bottom: .3em;
     padding-bottom: .5em;
     padding-top: .5em;
+    @include for-tablet-only {
+      display: inline-block;
+      margin-right: 1em;
+      font-size: $font-size-p;
+    }
     @include for-desktop-only {
       display: inline-block;
       margin-right: 2em;
