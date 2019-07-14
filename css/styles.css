@@ -594,6 +594,7 @@ template {
   @media (min-width: 1400px) {
     .img--logo {
       margin-left: 1em;
+      margin-bottom: 3em;
       width: 150px; } }
 
 .img--frame {
