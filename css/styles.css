@@ -605,8 +605,8 @@ template {
       margin-left: 7.3em; } }
   @media (min-width: 1400px) {
     .img--frame {
-      width: 200px;
-      height: 2180px;
+      width: 400px;
+      height: 180px;
       margin-left: 4em; } }
 
 .img--avatar {
