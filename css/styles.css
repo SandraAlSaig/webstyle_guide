@@ -603,7 +603,6 @@ template {
   @media (min-width: 1400px) {
     .img--frame {
       width: 400px;
-      max-width: 400px;
       margin-left: 4em; } }
 
 .img--avatar {
