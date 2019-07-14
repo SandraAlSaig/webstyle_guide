@@ -21,10 +21,17 @@
 
 .img--frame {
   padding: .7em;
+  height: 180px;
   border: 1px solid lightgrey;
   margin-bottom: 2em;
-  @include for-desktop-only {
+  @include for-tablet-only {
     width: 400px;
+    height: 180px;
+    margin-left: 7.3em;
+  }
+  @include for-desktop-only {
+    width: 200px;
+    height: 2180px;
     margin-left: 4em;
   }
 }

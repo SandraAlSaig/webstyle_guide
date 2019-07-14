@@ -595,11 +595,18 @@ template {
 
 .img--frame {
   padding: .7em;
+  height: 180px;
   border: 1px solid lightgrey;
   margin-bottom: 2em; }
-  @media (min-width: 1400px) {
+  @media (min-width: 768px) {
     .img--frame {
       width: 400px;
+      height: 180px;
+      margin-left: 7.3em; } }
+  @media (min-width: 1400px) {
+    .img--frame {
+      width: 200px;
+      height: 2180px;
       margin-left: 4em; } }
 
 .img--avatar {
